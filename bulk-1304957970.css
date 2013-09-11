@@ -1,0 +1,182 @@
+
+	/* general */
+	/* ======= */
+
+		html, body { background-color: transparent; }
+		
+	/* no margin and pading */
+	/* ==================== */
+		
+		html, body, #bodyContent,
+		#box, #background, #fitts, #floating, #debugOutputFixed, #debugOutputVariable,
+		#box_inner,
+		#embedded_logo, #rtl_box, #text, #menu, #embedded_powered_by, #my_news
+			{ padding: 0; margin: 0; }
+		
+
+	/* containers */
+	/* ========== */
+		
+		#background {
+			display: block;
+			position: fixed;
+			top: 0; left: 0;
+			width: 100%; height: 100%;
+			cursor: default;
+			z-index: 1;
+		}
+
+		#box { 
+			padding-left: 2em; padding-right: 2em;
+			margin-left: auto; margin-right: auto;
+			position: relative;
+			z-index: 10;
+		}
+
+		#box_inner { position: relative; }
+		#text { padding-top: 1em; }
+		
+	
+	/* user interface fix */
+	/* ================== */
+		
+		#background, #fitts, #floating, #debugOutputFixed, #debugOutputVariable,
+		#embedded_logo, #rtl_box, #menu, #embedded_powered_by, #my_news
+		{
+			direction: ltr; unicode-bidi: bidi-override; text-align: left;	
+			-moz-user-select: none; -webkit-user-select: none; user-select: none; 
+			outline: none; -moz-outline: none;
+		}
+
+		
+	/* fitts */
+	/* ===== */
+
+		#fitts { 
+			display: block; position: fixed;
+			width: 1px; height: 100%; overflow: hidden;
+			bottom: 0; left: 0;
+			cursor: default;
+			z-index: 30;
+		}
+
+		
+	/* floating */
+	/* ======== */
+
+		#floating a {
+			font-weight: bold; text-decoration: none;
+			margin-right: 0.5em;
+			padding: 0.25em; padding-left: 0.5em; padding-right: 0.5em;
+		}
+		
+		#floating {
+			font-size: 80%;
+			display: block;
+			position: fixed;
+			top: 0; right: 0;
+			z-index: 20;
+		}
+
+		#floating #floating_scroll_back { display: none; }
+		#floating #floating_close { margin-right: 0.15em; }
+		#floating #floating_menu { font-size: 125%; }
+		
+		
+	/* rtl */
+	/* === */
+	
+		#rtl_box a { border-bottom: solid 1px; margin-left: 1em; text-decoration: none; }
+		#rtl_box {
+			margin-bottom: 2em;
+			padding: 1em;
+			padding-top: 0.5em; padding-bottom: 0.5em;
+			display: none;
+		}
+		
+		html.couldBeRTL #rtl_box,
+		html.rtl #rtl_box
+			{ display: block; }
+		
+		html.couldBeRTL #rtl_box_on { border-bottom: 1px solid; }
+		html.couldBeRTL #rtl_box_off { border-bottom: 2px solid; }
+
+		html.rtl #rtl_box_on { border-bottom: 2px solid; }
+		html.rtl #rtl_box_off { border-bottom: 1px solid; }
+
+		html #rtl_box a:hover { border-bottom: 2px solid; }
+		
+		
+	/* embedded */
+	/* ======== */
+	
+		#embedded_logo, #embedded_powered_by { display: none; font-size: 80%; }
+		html.embedded #embedded_logo, html.embedded #embedded_powered_by { display: block; }
+		
+		#embedded_logo { margin-bottom: 1em; }
+		#embedded_powered_by { padding-left: 1em; padding-top: 0.5em; padding-bottom: 0.5em; }
+
+		
+	/* my news */
+	/* ======= */
+		
+		#my_news {
+			font-size: 80%;
+			padding-left: 1em; padding-top: 0.5em; padding-bottom: 0.5em;
+		}
+		
+
+	/* menu */
+	/* ==== */
+		
+		#menu {
+			margin-top: 3em;
+			font-size: 80%;
+			padding-left: 1em; padding-top: 0.5em; padding-bottom: 0.90em;
+		}
+		#menu a { padding-bottom: 0.25em; border-bottom: solid 1px; margin-right: 1em; font-weight: bold; text-decoration: none; }
+		#menu a:hover { border-bottom: 2px solid; }
+
+		
+	/* debug */	
+	/* ===== */
+	
+		#debugOutputFixed, #debugOutputVariable {
+			padding-bottom: 0.40em; margin-bottom: 0.40em;
+			font-family: "Courier New", Courier, monospace;
+			-moz-user-select: text; -webkit-user-select: text; user-select: text;
+		}
+		#debugOutputFixed p, #debugOutputVariable p { margin-top: 0.20em; }
+		
+		#debugOutputFixed { font-size: 150%; border-bottom: 0.06em solid; }
+		#debugOutputVariable { border-bottom: 0.13em solid; }
+		
+		#debugOutputFixed p strong { float: right; }
+		
+		
+	/* the text */
+	/* ======== */
+	
+	h1 a, h2 a, a h1, a h2 { text-decoration: none; }
+
+	pre { width: auto; }
+	
+	div.readableBigImage { margin-top: 0.5em; margin-bottom: 0.5em; }
+	div.readableBigImage img { display: block; border: 1px solid; float: none; }
+	
+	.clear { clear: both; margin: 0; } /* clear */
+	
+
+	
+	/* print */
+	/* ===== */
+	
+	@media print
+	{
+		#box { margin: 0; width: auto; }
+
+		#background, #fitts, #floating, #debug_output,
+		#embedded_logo, #rtl_box, #menu, #embedded_powered_by, #my_news
+			{ display: none; }
+	}
+	
