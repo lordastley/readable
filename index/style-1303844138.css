@@ -1,0 +1,110 @@
+	/* Reset */
+	/* ===== */
+
+		html, body, div, span, hr, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, font, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td {
+			background: transparent;
+			border: 0;
+			margin: 0;
+			padding: 0;
+			vertical-align: baseline;
+		}
+		h1, h2, h3, h4, h5, h6 { clear: both; font-weight: normal; }
+		ol, ul { list-style: none; }
+		blockquote { quotes: none; }
+		blockquote:before, blockquote:after { content: ''; content: none; }
+		cite { font-style: normal; }
+		del { text-decoration: line-through; }
+		table { border-collapse: collapse; border-spacing: 0; }
+		a img { border: none; }
+
+		em { font-style: italic; }
+		strong { font-weight: bold; }
+
+		hr { clear: both; float: none; display: block; height: 0; margin-top: 1.75em; margin-bottom: 1.5em; border-bottom: 1px dashed #777777; }
+
+		div.clear { clear: both; overflow: hidden; }
+
+		/* lists */
+		ul, ol { margin: 1.5em; margin-top: 0.5em; }
+		ul { list-style-type: disc; }
+		
+		ol { list-style-type: decimal; }
+		li { margin-top: 0.3em; }
+		
+		dl { padding-left: 1em;  margin-top: 1em; }
+		dl dt { font-weight: bold; margin-top: 0.5em; }
+		dl dd { margin-left: 1em; }
+	
+		
+	/* Layout */
+	/* ======= */
+
+		html { overflow-y: scroll; -webkit-text-size-adjust: none; }
+		body { position: relative; background-color: #f5f5f5; color: #111; font-size: 16px; line-height: 1.5; }
+		
+		body, .bodyFont,
+		input, select, textarea { font-family: Verdana, Geneva, sans-serif; }
+		
+		h1, h2, h3, 
+		.headerFont { font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, Utopia, serif; }
+		
+		/* containers */
+		#container { width: 35em; position: relative; margin-left: auto; margin-right: auto; }
+		#page { padding-top: 1em; padding-bottom: 1em; }
+		
+		
+	/* Links */
+	/* ===== */
+	
+		a {
+			outline: none; -moz-outline: none;
+			text-decoration: none;
+			color: #111;
+			border-bottom: 1px solid;
+			padding-left: 1px; padding-right: 1px;
+		}
+		a:hover {
+			background-color: #dfdfdf;
+			color: #111;
+			text-decoration: none;
+		}
+		
+	/* Paragraphs */
+	/* ========== */
+		
+		p { margin-top: 1em; }
+		h1 { font-size: 300%; margin-bottom: 0.5em; }
+		h2 { font-size: 200%; margin-bottom: 0.6em; }
+		h3 { font-size: 150%; margin-bottom: 0.7em; }
+		h1 { line-height: 1.1; }
+		h2, h3 { line-height: 1.3; }
+		
+		h1.smaller { font-size: 200%; margin-bottom: 1em; line-height: 1.3; }
+		h2.smaller { font-size: 150%; margin-bottom: 1em; }
+		h3.smaller { font-size: 110%; }
+		
+		h1.evenSmaller { font-size: 180%; margin-bottom: 1em; line-height: 1.4; }
+		h2.evenSmaller { font-size: 130%; margin-bottom: 1em; line-height: 1.4; }
+		
+		.noMarginBottom { margin-bottom: 0 !important; }
+
+		div.underHeaderInfo p { margin-top: 0.25em; }
+		noscript blockquote { font-size: 85%; padding: 1em; }
+		
+		
+	/* Pages */
+	/* ===== */
+
+		#backHomeTop, #backHomeBottom { border: none; }
+		#backHomeTop em, #backHomeBottom em { font-size:150%; font-style: normal; }
+		
+		#backHomeSeparatorTop { margin-bottom: 3em; margin-top: 0.25em; }
+		#backHomeSeparatorBottom { margin-top: 3em; margin-bottom: 0; }

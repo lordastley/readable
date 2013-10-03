@@ -1,0 +1,110 @@
+/* the reset for the iframe page */
+/* ============================= */
+
+	body, html,
+	h1, h2, h3, h4, h5, h6, div, p, blockquote, hr,
+	pre, code,
+	a, em, strong, abbr, acronym, del, dfn, img, q, 
+	dl, dt, dd, ol, ul, li, 
+	table, caption, tbody, tfoot, thead, tr, th, td
+	{
+		margin: 0;
+		padding: 0;
+		
+		border: 0;
+		
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 100%;
+		font-family: inherit;
+
+		letter-spacing: inherit;
+		
+		text-decoration: none;
+		
+		vertical-align: baseline;
+		
+		color: inherit;
+		text-align: inherit;
+	}
+	
+	blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+	blockquote, q {	quotes: "" ""; }
+	
+/* basic typography */
+/* ================ */
+
+	h1 { font-size: 2.5em; line-height: 1; }
+	h2 { font-size: 2em;   line-height: 1; }
+	h3 { font-size: 1.5em; line-height: 1; }
+	h4 { font-size: 1.2em; line-height: 1.25; }
+	h5 { font-size: 1em;   line-height: 1; font-weight: bold; }
+	h6 { font-size: 1em;   line-height: 1; font-weight: bold; }
+
+	h1,	h2, h3, h4, h5, h6 { font-weight: normal; margin-top: 1.5em; margin-bottom: 1em; }
+	h1, h2 { margin-bottom: 0.75em; }
+	
+/* block level text elements */
+/* ========================= */
+
+	blockquote { padding: 1em; padding-top: 1px; font-style: italic; }
+	
+/* inline level text elements */
+/* ========================== */
+
+	a { cursor: pointer; text-decoration: underline; }
+	a.not { cursor: text; text-decoration: none; }
+
+	strong,	dfn { font-weight: bold; }
+	em,	dfn { font-style: italic; }
+	del { text-decoration: line-through; }
+	del:hover { text-decoration: none; }
+	abbr, acronym { border-bottom: 1px dotted; }
+	
+/* lists */
+/* ===== */
+
+	ul, ol { margin: 1.5em; }
+	ul { list-style-type: disc; }
+	
+	ol { list-style-type: decimal; }
+	li { margin-top: 0.3em; }
+	
+	li ul, li ol { margin-left: 1.5em; margin-right: 1.5em;	}
+	
+	dl { }
+	dt { margin-left: 1em; margin-top: 1em; font-weight: bold; }
+	dd { margin-left: 2em; }
+	
+/* table */
+/* ===== */
+
+	table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+	table caption { text-align: center; }
+	table th { font-weight: bold; }
+	table th, table td { padding: 0.3em; vertical-align: top; border: solid 0.1em; }
+
+/* block level spacing */
+/* =================== */
+
+	hr
+	{
+		clear: both;
+		float: none;
+		
+		display: block;
+		height: 0;
+
+		padding: 0;
+		margin: 0;
+
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		
+		border-bottom: 0.13em dashed;
+	}
+
+	table,
+	p, div, blockquote, 
+	ul, ol, dl { margin-top: 1em; }
+	
