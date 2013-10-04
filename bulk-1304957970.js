@@ -270,7 +270,7 @@ $(
 		+			'</div>'
 		
 		+			($R.embedded ? '' : 
-					'<div id="my_news">If you <strong>love</strong> Readable, spread the word &mdash; it\'s the only thing I\'ll ever ask in return.</div>')
+					'<div id="my_news"><a href="https://github.com/lordastley/readable">readable</a> is based on <a target="_blank" href="http://readable.tastefulwords.com/"><strong>Readable</strong></a> by Gabriel Coarna, and is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">cc-by-nc-sa 3.0</a>.</div>')
 
 		+			'<div id="embedded_powered_by">Powered by <a target="_blank" href="http://readable.tastefulwords.com/?get"><strong>Readable</strong></a>.<br/>'+'Get <a target="_blank" href="http://readable.tastefulwords.com/?get">this view</a> on any website.</div>'
 		+		'</div>'
@@ -301,7 +301,7 @@ $(
 	
 	$('#menu_close').click(function(){ $R.hide(); return false; });
 	$('#menu_print').click(function(){ window.print(); return false; });
-	$('#menu_problem').attr('href', $R.linksPath+'problem/');
+	$('#menu_problem').attr('href', 'https://github.com/lordastley/readable/issues/');
 	
 	$('#rtl_box_on').click(function(){ $R.makeRTL(); return false; });
 	$('#rtl_box_off').click(function(){ $R.makeNotRTL(); return false; });
@@ -374,7 +374,9 @@ $(
 			$('#baseCSS').remove();
 			
 			//	append
-			$('head').append('<link id="baseCSS" rel="stylesheet" href="'+$R.path+'base-'+_applyOptions['base']+'-'+$R.compileTime+'.css'+'" type="text/css" />');
+                        if (_applyOptions['base']){
+			    $('head').append('<link id="baseCSS" rel="stylesheet" href="'+$R.path+'base-'+_applyOptions['base']+'-'+$R.compileTime+'.css'+'" type="text/css" />');
+                        }
 		}
 		
 		if (_resetOptions)
@@ -451,7 +453,7 @@ $(
 
 				+	'#menu, #rtl_box { background-color: [=color_text]; color: [=color_background]; } '
 				+	'#menu a, #rtl_box a { color: [=color_background]; border-color: [=color_background]; } '
-
+                                +       '#my_news a { color: [=color_text]; } '
 				
 				+	'[=custom_css] '
 				

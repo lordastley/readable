@@ -317,8 +317,7 @@ array(
 			<h1 style="margin-top:1em;">This is <strong>Readable</strong>.</h1>
 			<div id="landing_paragraphs">
 				<p><strong>Readable</strong> is an application that helps you read more of the web. It reformats text &mdash; on any website &mdash; according to your exact specifications.</p>
-                                <p>Readable is originally by <a href="http://readable.tastefulwords.com">Gabriel Coarna</a>, and is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> license.</p>
-                                <p>Modifications to Readable made by <a href="https://github.com/lordastley/readable">lordastley</a>.
+                                <p><a href="http://readable.tastefulwords.com">Readable</a> is originally by Gabriel Coarna, and is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> license. Modifications to Readable made by <a href="https://github.com/lordastley/readable">lordastley</a>.</p>
 			</div>
 			
 			<p style="margin-bottom: 1em;" class="headerFont" id="landing_action_button"><strong>&darr;</strong> <a title="Show setup page." href="#">Show Setup</a></p>

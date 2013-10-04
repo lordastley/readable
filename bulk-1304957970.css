@@ -124,6 +124,8 @@
 			font-size: 80%;
 			padding-left: 1em; padding-top: 0.5em; padding-bottom: 0.5em;
 		}
+                #my_news a { text-decoration: none; border-bottom: 1px solid; }
+                #my_news a:hover { border-bottom: 1px dashed; }
 		
 
 	/* menu */
@@ -134,7 +136,7 @@
 			font-size: 80%;
 			padding-left: 1em; padding-top: 0.5em; padding-bottom: 0.90em;
 		}
-		#menu a { padding-bottom: 0.25em; border-bottom: solid 1px; margin-right: 1em; font-weight: bold; text-decoration: none; }
+		#menu a { padding-bottom: 0.25em; border-bottom: 1px solid; margin-right: 1em; font-weight: bold; text-decoration: none; }
 		#menu a:hover { border-bottom: 2px solid; }
 
 		

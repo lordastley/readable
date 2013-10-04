@@ -1,6 +1,6 @@
 readable
 ========
-Fork/backup of http://readable.tastefulwords.com/ by Gabriel Coarna, licensed [cc-by-nc-sa-3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+Fork of http://readable.tastefulwords.com/ by Gabriel Coarna, licensed [cc-by-nc-sa-3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 Changes
 -------
@@ -8,6 +8,9 @@ Changes
 * Absolute URLs $R.path and $R.linksPath in target.js need to be updated to point to the server the script and config page are hosted, respectively.
 * Bookmarklet configuration page has been cloned and modified to remove example images and add license information. It also defaults to showing the "configuration overlay".
 * Configuration page GET parsing now works for the "change style" link at bottom of Readable overlay; PHP is required on the server for this to work.
+* Using the "Browser Default" base style no longer tries to fetch a non-existant stylesheet.
+* Added attribution and license info to displayed footer when invoked via bookmarklet.
+* "Report bug" link now points to github issue tracker.
 
 Configuration
 -------------
@@ -25,10 +28,9 @@ TODO
 * Add embed configuration page.
 * Make configuration page parse GET variables via JavaScript, for completely static, easy to host anywhere-ability.
 * Consolidate script configuration (base URLs, etc) into one location.
-* Update embedded HTML in bulk-[timestamp].js. 
+* Update embedded HTML for embed in bulk-[timestamp].js. 
     * Retain link to original source, add author's name & link to cc license to comply with cc-by-nc-sa license.
-    * Update problem report link to point to github issues tracker.
 * log.js is a stub, and does not actually do anything. Looks like it is used for tracking / stats parsed from server logs. Perhaps remove calls to it.
-* Remove hit/fetch on non-existant browser base CSS file, when selected.
+* Fix multiple insertions of identical Google Font stylesheet links when applying Readable to a page multiple times.
 * Combine multiple Google Font stylesheet requests into a single one, to reduce network calls.
 * Perhaps add Google Font API suport to dynamically query available fonts in setup page / allow any valid Google Font in custom font box.
