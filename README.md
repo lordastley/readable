@@ -18,7 +18,7 @@ target.js and index.php contain "base URL" variables. Update these to point to w
 
 If you are capable of serving the files via http and https, use "//" as the protocol; Otherwise, use "http://".
 
-The default "//example.com/readable" assumes that you've placed a copy of this project in /readable on your server, and that you can serve files securely.
+The default "//example.com/readable" assumes that you've placed a copy of this project in /readable on your server example.com, and that you can serve files securely.
 
 It is possible to separate the configuration page from the assets. In target.js the assets (.css, .js, etc) will be accessed via $R.path, the configuration page via $R.linksPath. In index.php, $baseURL should be the same as $R.path in target.js. 
 
@@ -33,4 +33,4 @@ TODO
 * log.js is a stub, and does not actually do anything. Looks like it is used for tracking / stats parsed from server logs. Perhaps remove calls to it.
 * Fix multiple insertions of identical Google Font stylesheet links when applying Readable to a page multiple times.
 * Combine multiple Google Font stylesheet requests into a single one, to reduce network calls.
-* Perhaps add Google Font API suport to dynamically query available fonts in setup page / allow any valid Google Font in custom font box.
+* Perhaps add Google Font API support to dynamically query available fonts in setup page / allow any valid Google Font in custom font box.
