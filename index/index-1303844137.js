@@ -172,7 +172,7 @@
 				var _font_key = _font.replace(/\s/gi, '+');
 				$(window.readableSetup.frameDocument)
 					.find('head')
-						.append('<link href="http://fonts.googleapis.com/css?family='+_font_key+'" rel="stylesheet" type="text/css" />');
+						.append('<link href="//fonts.googleapis.com/css?family='+_font_key+'" rel="stylesheet" type="text/css" />');
 			},
 			_double_check_font = function (fontVariable)
 			{
