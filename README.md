@@ -16,11 +16,11 @@ Configuration
 -------------
 target.js and index.php contain "base URL" variables. Update these to point to where you have placed Readable.
 
-If you are capable of serving the files via http and https, use "//" as the protocol; Otherwise, use "http://".
+If you are capable of serving the files via http and https, use `"//"` as the protocol; Otherwise, use `"http://"`.
 
-The default "//example.com/readable" assumes that you've placed a copy of this project in /readable on your server example.com, and that you can serve files securely.
+The default `"//example.com/readable"` assumes that you've placed a copy of this project in `/readable` on your server `example.com`, and that you can serve files securely.
 
-It is possible to separate the configuration page from the assets. In target.js the assets (.css, .js, etc) will be accessed via $R.path, the configuration page via $R.linksPath. In index.php, $baseURL should be the same as $R.path in target.js. 
+It is possible to separate the configuration page from the assets. In target.js the assets (.css, .js, etc) will be accessed via `$R.path`, the configuration page via `$R.linksPath`. In index.php, `$baseURL` should be the same as `$R.path` in target.js. 
 
 TODO
 ----
@@ -34,8 +34,8 @@ TODO
 * Fix multiple insertions of identical Google Font stylesheet links when applying Readable to a page multiple times.
 * Combine multiple Google Font stylesheet requests into a single one, to reduce network calls.
 * Perhaps add Google Font API support to dynamically query available fonts in setup page / allow any valid Google Font in custom font box.
-* Italicize <figcaption>, <label>(?), <cite>(?)  to differentiate from main content. 
-* Perhaps remove content in <aside> tags. The Atlantic uses it for pullquotes.
-* Ibid <q> tags - Polygon, The Verge use them for pullquotes.
+* Italicize `<figcaption>`, `<label>`(?), `<cite>`(?)  to differentiate from main content. 
+* Perhaps remove content in `<aside>` tags. The Atlantic uses it for pullquotes.
+* Ibid `<q>` tags - Polygon, The Verge use them for pullquotes.
 * General HTML 5 tag updates.
 
