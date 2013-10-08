@@ -1315,9 +1315,19 @@ SCR_END;
 <script type="text/javascript" src="./index/index-1303844137.js"></script>
 <link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4-1303844144.css" />
 
+<?php
+
+if (array_key_exists('change', $_GET) or array_key_exists('setup', $_GET)) {
+
+echo <<<SETUP
 	<style type="text/css">
 		#setup_slate { top: 0%; }
 	</style>
+SETUP;
+}
+?>
+
+
 <script type="text/javascript">
 	$(function ()
 	{
