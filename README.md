@@ -34,3 +34,8 @@ TODO
 * Fix multiple insertions of identical Google Font stylesheet links when applying Readable to a page multiple times.
 * Combine multiple Google Font stylesheet requests into a single one, to reduce network calls.
 * Perhaps add Google Font API support to dynamically query available fonts in setup page / allow any valid Google Font in custom font box.
+* Italicize <figcaption>, <label>(?), <cite>(?)  to differentiate from main content. 
+* Perhaps remove content in <aside> tags. The Atlantic uses it for pullquotes.
+* Ibid <q> tags - Polygon, The Verge use them for pullquotes.
+* General HTML 5 tag updates.
+
