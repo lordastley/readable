@@ -1244,7 +1244,7 @@ window.readableSetup.style_themes.changing_styles = function ()
 SCR_ST;
 
     foreach($_GET as $idx => $value){
-        if ($params[$idx]){ // check to make sure the GET params are valid things for the script.
+        if (array_key_exists($idx, $params)){ // check to make sure the GET params are valid things for the script.
 
             // change quote(thing) to "thing"
             $value = preg_replace('#quote\(([^)]*)\)#', '"$1"', $value);

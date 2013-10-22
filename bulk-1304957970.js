@@ -178,6 +178,7 @@ $(
 		+ 	'{ '
 		+		'display: block !important; '
 		+		'overflow: auto !important; '
+                +               'z-index: 2147483647 !important; '
 		+	'} '
 	;
 
@@ -391,7 +392,7 @@ $(
 					if (_font in $R.googleFontsIndex); else { return; }
 					
 					var _font_key = _font.replace(/\s/gi, '+');
-					$('head').append('<link href="//fonts.googleapis.com/css?family='+_font_key+'" rel="stylesheet" type="text/css" />');
+					$('head').append('<link href="//fonts.googleapis.com/css?family='+_font_key+':regular,bold,italic" rel="stylesheet" type="text/css" />');
 				},
 				_double_check_font = function (fontVariable)
 				{
@@ -408,6 +409,13 @@ $(
 			_applyOptions['custom_css'].replace(/font-family: "([^",]+)"/gi, _check_google_font);
 			_applyOptions['custom_css'].replace(/font-family: ([^",\s]+)/gi, _check_google_font);
 			
+                        // TODO: Reduce number of google font calls: make array of desired fonts,
+                        // burst into treats, append only a single google fonts stylesheet.
+                        //
+                        // css?family=font:subfamily,etc|font+name+2:style,etc
+                        //
+                        // evaluate load times w/ all styles appended - may not want to do that.
+
 			//	custom css
 			//	use options in the custom_css
 			_applyOptions['custom_css'] = _applyOptions['custom_css'].replace(/\[=custom_css\]/gi, '');
