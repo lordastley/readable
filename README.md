@@ -22,20 +22,3 @@ The default `"//example.com/readable"` assumes that you've placed a copy of this
 
 It is possible to separate the configuration page from the assets. In target.js the assets (.css, .js, etc) will be accessed via `$R.path`, the configuration page via `$R.linksPath`. In index.php, `$baseURL` should be the same as `$R.path` in target.js. 
 
-TODO
-----
-* Finish updating links on configuration page to point to local copies of FAQ and About.
-* Add embed configuration page.
-* Make configuration page parse GET variables via JavaScript, for completely static, easy to host anywhere-ability.
-* Consolidate script configuration (base URLs, etc) into one location.
-* Update embedded HTML for embed in bulk-[timestamp].js. 
-    * Retain link to original source, add author's name & link to cc license to comply with cc-by-nc-sa license.
-* log.js is a stub, and does not actually do anything. Looks like it is used for tracking / stats parsed from server logs. Perhaps remove calls to it.
-* Fix multiple insertions of identical Google Font stylesheet links when applying Readable to a page multiple times.
-* Combine multiple Google Font stylesheet requests into a single one, to reduce network calls.
-* Perhaps add Google Font API support to dynamically query available fonts in setup page / allow any valid Google Font in custom font box.
-* Italicize `<figcaption>`, `<label>`(?), `<cite>`(?)  to differentiate from main content. 
-* Perhaps remove content in `<aside>` tags. The Atlantic uses it for pullquotes.
-* Ibid `<q>` tags - Polygon, The Verge use them for pullquotes.
-* General HTML 5 tag updates.
-
