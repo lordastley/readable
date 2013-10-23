@@ -164,7 +164,7 @@
 	pre { width: auto; }
 	
 	div.readableBigImage { margin-top: 0.5em; margin-bottom: 0.5em; }
-	div.readableBigImage img { display: block; border: 1px solid; float: none; max-width: 99.8%; margin: auto;}
+	div.readableBigImage img { display: block; border: 1px solid; float: none; max-width: 99.8%; height: auto; margin: auto;}
 	
 	.clear { clear: both; margin: 0; } /* clear */
 	
