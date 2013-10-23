@@ -271,7 +271,7 @@ $(
 		+			'</div>'
 		
 		+			($R.embedded ? '' : 
-					'<div id="my_news"><a target="_blank" href="https://github.com/lordastley/readable">readable</a> is based on <a target="_blank" href="http://readable.tastefulwords.com/"><strong>Readable</strong></a> by Gabriel Coarna, and is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">cc-by-nc-sa 3.0</a>.</div>')
+					'<div id="my_news"><a target="_blank" href="https://github.com/lordastley/readable">readable</a> is based on <a target="_blank" href="http://readable.tastefulwords.com/"><strong>Readable</strong></a> by Gabriel Coarna, and is licensed <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">cc-by-nc-sa 3.0</a>.</div>')
 
 		+			'<div id="embedded_powered_by">Powered by <a target="_blank" href="http://readable.tastefulwords.com/?get"><strong>Readable</strong></a>.<br/>'+'Get <a target="_blank" href="http://readable.tastefulwords.com/?get">this view</a> on any website.</div>'
 		+		'</div>'
