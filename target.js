@@ -20,14 +20,15 @@
 		_custom = 
 		{
 
-				'www.google.com': 			[[/^\/reader\/view\//i, 	'js: google_reader']],
-				'www.stumbleupon.com': 		[[/^\/su\//i, 				'js: stumble_upon']],
-				'en.wikipedia.org': 		[[/^\/wiki\//i, 			'js: wikipedia_en']],
+				'www.stumbleupon.com': 		[[/^\/su\//i,		'js: stumble_upon']],
+				'en.wikipedia.org': 		[[/^\/wiki\//i,		'js: wikipedia_en']],
 
-				'www.boston.com': 			[[/^\//i, 					'js: boston_globe']],
-				'boston.com': 				[[/^\//i, 					'js: boston_globe']],
+				'www.boston.com': 		[[/^\//i, 		'js: boston_globe']],
+				'boston.com': 			[[/^\//i, 		'js: boston_globe']],
 
-				'www.jornada.unam.mx': 		[[/^\//i, 					'jq: #article-text']],
+				'www.jornada.unam.mx': 		[[/^\//i, 		'jq: #article-text']],
+                                'www.polygon.com':              [[/^\/features\//i,     'jq: .body']],
+                                'www.theverge.com':             [[/^\//i,               'jq: .instapaper_body']],
 
 				'':''
 		}
