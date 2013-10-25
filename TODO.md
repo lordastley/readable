@@ -40,7 +40,7 @@ Things that need fixin' and / or doin'.
 ### Fixed for now in target.js w/ custom selector
 * polygon.com (Features category)
     * Sometimes only grabs 2nd section of content, misses rest.
-    * <label> used to mirror section headers, shows up before the <h2> in parsed content
+    * `<label>` used to mirror section headers, shows up before the `<h2>` in parsed content
 * theverge.com (Longform/Features category)
     * Often misses first sections of content, grabbing 2nd / 3rd only.
     * Sometimes includes "Follow on Twitter" section.
