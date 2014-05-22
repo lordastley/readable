@@ -31,6 +31,7 @@ Things that need fixin' and / or doin'.
         * `<blockquote><p>` (Engadget, although these actually look OK)
         * `<table>` (Aljazeera)
     * Use `instapaper_body` class as a heuristic for content, since some sites use it to point out the main content to instapaper.
+* Auto-paginate?
 
 ### Misc.
 * log.js is a stub, and does not actually do anything. Looks like it is used for tracking / stats parsed from server logs. Perhaps remove calls to it / make calls optional.
