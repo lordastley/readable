@@ -293,7 +293,7 @@ array(
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />	
-	<title>Readable / TastefulWords.com</title>
+	<title>Readable</title>
 	<link rel="stylesheet" href="./index/style-1303844138.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="./index/index-1303844137.css" />
 	<link rel="icon" href="./favicon.ico"/>
@@ -483,9 +483,8 @@ array(
 											<p><a class="fancy" href="#explain-how-to-install" title="How to install Readable.">How to <strong>Install</strong></a></p>
 						<p><a class="fancy" href="#explain-how-to-use" title="How to use Readable.">How to <strong>Use</strong></a></p>
 										<br/>
-					<p><a href="http://readable.tastefulwords.com/faq/">F.A.Q.</a></p>
-					<p><a href="http://readable.tastefulwords.com/about-and-contact/">About &amp; Contact</a></p>
-					<p><a href="http://twitter.com/tastefulwords/"><strong style="font-size: 125%; line-height: 1;">@</strong>tastefulwords</a></p>
+					<p><a href="./faq">F.A.Q.</a></p>
+					<p><a href="./about-and-contact">About &amp; Contact</a></p>
 				</div>
 			</div>
 			
@@ -783,7 +782,7 @@ array(
 	window.readableSetup =
 	{
 		'baseURLStatic': <?php echo "'$baseURL'";?>,
-		'baseCSSPostfix': '-1304957970.css',
+		'baseCSSPostfix': '.css',
 
 		'codeType': 'bookmarklet',
 		
