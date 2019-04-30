@@ -2,10 +2,8 @@
 
  $R.compileTime = '1400734851';
 
- //	$R.path = 'http://readable-static.tastefulwords.com/';
- $R.path = '//example.com/readable/';
- //	$R.linksPath = 'http://readable.tastefulwords.com/';
- $R.linksPath = '//example.com/readable/';
+ $R.path = '//rawcdn.githack.com/lordastley/readable/master/'; 
+ $R.linksPath = '//rawcdn.githack.com/lordastley/readable/master/';
 
  $R.win = window;
 
